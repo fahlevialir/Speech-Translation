@@ -4,9 +4,9 @@ from dotenv import load_dotenv
 import streamlit as st
 
 load_dotenv()
-# speech_key, service_region = os.environ['AZURE_SPEECH_KEY'], os.environ['SPEECH_REGION']
-speech_key = st.secrets['AZURE_SPEECH_KEY']['key']
-service_region = st.secrets['SPEECH_REGION']['region']
+ speech_key, service_region = os.environ['AZURE_SPEECH_KEY'], os.environ['SPEECH_REGION']
+# speech_key = st.secrets['AZURE_SPEECH_KEY']['key']
+# service_region = st.secrets['SPEECH_REGION']['region']
 print(speech_key)
 print(service_region)
 st.title("Speech Translation")
