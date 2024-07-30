@@ -1,2 +1,4 @@
 *.env_example
 *__pycache__
+*app.py
+*other.py
