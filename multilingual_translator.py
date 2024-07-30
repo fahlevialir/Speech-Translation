@@ -18,7 +18,7 @@ lang_codes = {
 }
 your_lang = {
     'Arabic': 'ar', 'Bahasa Indonesian': 'id', 'Bengali': 'bn',
-    'Chinese Mandarin': 'zh', 'Dutch': 'nl', 'English (default)': 'en', 
+    'Chinese Mandarin': 'lzh', 'Dutch': 'nl', 'English (default)': 'en', 
     'French': 'fr', 'German': 'de', 'Hindi': 'hi', 'Italian': 'it', 
     'Japanese': 'ja', 'Korean': 'ko', 'Russian': 'ru', 'Spanish': 'es', 
     'Telugu': 'te'
