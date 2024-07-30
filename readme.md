@@ -1,4 +1,6 @@
 # Speech Translation
 
-- install the libraries
-- pip install -r requirements.txt
+1. install the libraries
+2. `pip install -r requirements.txt`
+3. on terminal `streamlit run sts.py`
+
