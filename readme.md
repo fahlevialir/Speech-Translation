@@ -1,4 +1,4 @@
 # Speech Translation
 
-#install the libraries
-pip install -r requirements.txt
+- install the libraries
+- pip install -r requirements.txt
