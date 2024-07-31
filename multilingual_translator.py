@@ -4,24 +4,26 @@ from dotenv import load_dotenv
 import streamlit as st
 
 # Load environment variables from .env file
-load_dotenv()
-speech_key = os.getenv('AZURE_SPEECH_KEY')
-service_region = os.getenv('SPEECH_REGION')
+# load_dotenv()
+# speech_key = os.getenv('AZURE_SPEECH_KEY')
+# service_region = os.getenv('AZURE_SPEECH_REGION')
+speech_key = st.secrets["speech_service"]["key"]
+service_region = st.secrets["speech_service"]["region"]
 
 # Define language codes
 lang_codes = {
-    'Arabic': 'ar-EG', 'Bahasa Indonesian': 'id-ID', 'Bengali': 'bn-IN',
+    'Arabic': 'ar-EG', 'Bahasa Indonesian': 'id-ID',
     'Chinese Mandarin': 'zh-CN', 'Dutch': 'nl-NL', 'English (default)': 'en-US', 
     'French': 'fr-FR', 'German': 'de-DE', 'Hindi': 'hi-IN', 'Italian': 'it-IT', 
     'Japanese': 'ja-JP', 'Korean': 'ko-KR', 'Russian': 'ru-RU', 'Spanish': 'es-ES', 
-    'Telugu': 'te-IN'
+    
 }
 your_lang = {
-    'Arabic': 'ar', 'Bahasa Indonesian': 'id', 'Bengali': 'bn',
+    'Arabic': 'ar', 'Bahasa Indonesian': 'id',
     'Chinese Mandarin': 'lzh', 'Dutch': 'nl', 'English (default)': 'en', 
     'French': 'fr', 'German': 'de', 'Hindi': 'hi', 'Italian': 'it', 
     'Japanese': 'ja', 'Korean': 'ko', 'Russian': 'ru', 'Spanish': 'es', 
-    'Telugu': 'te'
+    
 }
 
 st.sidebar.title("Multilingual Speech Translation")
